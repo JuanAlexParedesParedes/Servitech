@@ -72,8 +72,12 @@ section {
 }
 
 .proyecto-card-img {
-  height: 180px;
+  height: 260px;
   object-fit: cover;
+}
+
+.proyecto-card .card-body {
+  padding: 1.5rem;
 }
 
 .proyecto-card .card-footer {
