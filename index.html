@@ -8,20 +8,22 @@
   <link rel="stylesheet" href="assets/css/estilo.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#home">Servitech</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#sobre-nosotros">Sobre nosotros</a></li>
-        <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
-      </ul>
-    </div>
-  </nav>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#home">Servitech</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre-nosotros">Sobre nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
   <section id="home" class="section-page active">
     <div id="carrusel-home" class="carousel slide" data-ride="carousel">
@@ -90,6 +92,32 @@
       </form>
     </div>
   </section>
+
+  <footer class="site-footer py-4 mt-auto">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h6>Servitech</h6>
+          <p class="mb-0">Soluciones en Redes, DevOps y CCTV.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6>Navegación</h6>
+          <ul class="list-unstyled mb-0">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#sobre-nosotros" class="footer-link">Sobre nosotros</a></li>
+            <li><a href="#proyectos" class="footer-link">Proyectos</a></li>
+            <li><a href="#login" class="footer-link">Login</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6>Contacto</h6>
+          <p class="mb-0">contacto@servitech.cl</p>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <p class="text-center mb-0">&copy; 2026 Servitech. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
