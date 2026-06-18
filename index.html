@@ -84,10 +84,25 @@
   <section id="proyectos" class="section-page">
     <div class="container py-5">
       <h2 class="mb-4">Proyectos</h2>
-      <div class="row">
 
-        <div class="col-lg-6 col-md-6 mb-4">
-          <div class="card proyecto-card h-100">
+      <!-- Botones de filtro -->
+      <div class="mb-4 text-center">
+        <button class="btn btn-outline-light btn-filtro active mr-2" data-filtro="todos">Todos</button>
+        <button class="btn btn-outline-primary btn-filtro mr-2" data-filtro="redes">Redes</button>
+        <button class="btn btn-outline-success btn-filtro mr-2" data-filtro="devops">DevOps</button>
+        <button class="btn btn-outline-danger btn-filtro" data-filtro="cctv">CCTV</button>
+      </div>
+
+      <div class="row" id="cards-proyectos">
+
+        <div class="col-lg-6 col-md-6 mb-4 proyecto-item" data-categoria="redes">
+          <div class="card proyecto-card h-100"
+            data-titulo="Red Corporativa Banco XYZ"
+            data-descripcion="Diseño e implementación de red corporativa con VLANs, redundancia y firewall perimetral para sede principal y tres sucursales."
+            data-fecha="Marzo 2025"
+            data-estado="Completado"
+            data-img="assets/img/redes.svg"
+            data-url="#">
             <img src="assets/img/redes.svg" class="card-img-top proyecto-card-img" alt="Red Corporativa">
             <div class="card-body">
               <span class="badge badge-primary mb-2">Redes</span>
@@ -97,13 +112,19 @@
             </div>
             <div class="card-footer d-flex justify-content-between align-items-center">
               <span class="badge badge-success">Completado</span>
-              <a href="#" class="btn btn-sm btn-outline-light">Ver proyecto</a>
+              <span class="btn-ver-proyecto btn btn-sm btn-outline-light">Ver más</span>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-6 col-md-6 mb-4">
-          <div class="card proyecto-card h-100">
+        <div class="col-lg-6 col-md-6 mb-4 proyecto-item" data-categoria="devops">
+          <div class="card proyecto-card h-100"
+            data-titulo="Pipeline CI/CD Startup Tech"
+            data-descripcion="Automatización de deploy con GitHub Actions, Docker y monitoreo con Grafana para equipo de desarrollo de 12 personas."
+            data-fecha="Enero 2026"
+            data-estado="En progreso"
+            data-img="assets/img/devops.svg"
+            data-url="#">
             <img src="assets/img/devops.svg" class="card-img-top proyecto-card-img" alt="Pipeline CI/CD">
             <div class="card-body">
               <span class="badge badge-success mb-2">DevOps</span>
@@ -113,13 +134,19 @@
             </div>
             <div class="card-footer d-flex justify-content-between align-items-center">
               <span class="badge badge-warning text-dark">En progreso</span>
-              <a href="#" class="btn btn-sm btn-outline-light">Ver proyecto</a>
+              <span class="btn-ver-proyecto btn btn-sm btn-outline-light">Ver más</span>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-6 col-md-6 mb-4">
-          <div class="card proyecto-card h-100">
+        <div class="col-lg-6 col-md-6 mb-4 proyecto-item" data-categoria="cctv">
+          <div class="card proyecto-card h-100"
+            data-titulo="Sistema CCTV Mall Central"
+            data-descripcion="Instalación de 48 cámaras IP con grabación centralizada, acceso remoto y sistema de alertas en tiempo real."
+            data-fecha="Noviembre 2025"
+            data-estado="Completado"
+            data-img="assets/img/cctv.svg"
+            data-url="#">
             <img src="assets/img/cctv.svg" class="card-img-top proyecto-card-img" alt="CCTV Mall Central">
             <div class="card-body">
               <span class="badge badge-danger mb-2">CCTV</span>
@@ -129,7 +156,7 @@
             </div>
             <div class="card-footer d-flex justify-content-between align-items-center">
               <span class="badge badge-success">Completado</span>
-              <a href="#" class="btn btn-sm btn-outline-light">Ver proyecto</a>
+              <span class="btn-ver-proyecto btn btn-sm btn-outline-light">Ver más</span>
             </div>
           </div>
         </div>
@@ -137,6 +164,27 @@
       </div>
     </div>
   </section>
+
+  <!-- Modal proyecto -->
+  <div class="modal fade" id="modalProyecto" tabindex="-1" role="dialog" aria-labelledby="modalTitulo" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content modal-proyecto-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitulo"></h5>
+          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img id="modalImg" src="" class="img-fluid mb-3 w-100 modal-img" alt="">
+          <p id="modalDesc" class="mb-3"></p>
+          <p class="mb-1"><strong>Fecha:</strong> <span id="modalFecha"></span></p>
+          <p class="mb-3"><strong>Estado:</strong> <span id="modalEstado"></span></p>
+          <a id="modalUrl" href="#" class="btn btn-outline-light" target="_blank" rel="noopener">Ver proyecto completo</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <section id="login" class="section-page">
     <div class="container py-5">
