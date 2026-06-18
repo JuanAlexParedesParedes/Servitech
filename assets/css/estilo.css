@@ -10,15 +10,23 @@ body {
   font-family: sans-serif;
 }
 
-nav {
-  display: flex;
-  gap: 1rem;
-  padding: 1rem;
+/* Visibilidad de secciones — jQuery agrega/quita .active */
+.section-page {
+  display: none;
 }
 
-nav a {
-  color: #ffffff;
-  text-decoration: none;
+.section-page.active {
+  display: block;
+}
+
+/* El carrusel ocupa todo el ancho sin padding extra */
+#home {
+  padding: 0;
+}
+
+.carousel-item img {
+  height: 420px;
+  object-fit: cover;
 }
 
 section {
