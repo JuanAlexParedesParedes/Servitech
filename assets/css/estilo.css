@@ -64,3 +64,25 @@ section {
   border-color: #444444;
   margin: 1rem 0;
 }
+
+.proyecto-card {
+  background-color: #1c1c1c;
+  border: 1px solid #444444;
+  color: #ffffff;
+}
+
+.proyecto-card-img {
+  height: 180px;
+  object-fit: cover;
+}
+
+.proyecto-card .card-footer {
+  background-color: #111111;
+  border-top: 1px solid #444444;
+}
+
+.proyecto-meta {
+  color: #aaaaaa;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
