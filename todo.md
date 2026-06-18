@@ -41,26 +41,26 @@ servitech/
 
 ## Pendientes
 
-### `fronted-creador`
-
-| # | Tarea                                         | Estado    |
-| - | --------------------------------------------- | --------- |
-| 1 | Crear index.html base                         | pendiente |
-| 2 | Crear assets/css/estilo.css                   | pendiente |
-| 3 | Sección: Home                                 | pendiente |
-| 4 | Sección: Sobre nosotros                       | pendiente |
-| 5 | Sección: Proyectos                            | pendiente |
-| 6 | Sección: Login                                | pendiente |
-| 7 | Aplicar paleta de colores (#000000 / #ffffff) | pendiente |
-
-### `backend-creador`
-
-| # | Tarea                   | Estado    |
-| - | ----------------------- | --------- |
-| 1 | Crear assets/js/core.js | pendiente |
+vacío
 
 ---
 
 ## Completados
 
-*(vacío)*
+### `fronted-creador`
+
+| # | Tarea                                         | Estado     |
+| - | --------------------------------------------- | ---------- |
+| 1 | Crear index.html base                         | completado |
+| 2 | Crear assets/css/estilo.css                   | completado |
+| 3 | Sección: Home                                 | completado |
+| 4 | Sección: Sobre nosotros                       | completado |
+| 5 | Sección: Proyectos                            | completado |
+| 6 | Sección: Login                                | completado |
+| 7 | Aplicar paleta de colores (#000000 / #ffffff) | completado |
+
+### `backend-creador`
+
+| # | Tarea                   | Estado     |
+| - | ----------------------- | ---------- |
+| 1 | Crear assets/js/core.js | completado |
