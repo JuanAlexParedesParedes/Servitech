@@ -19,7 +19,9 @@ body {
 }
 
 .section-page.active {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 /* El carrusel ocupa todo el ancho sin padding extra */
